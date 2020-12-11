@@ -16,6 +16,7 @@ spack:
     - target=skylake
   - packages:
     - seissol-env+mpi+asagi~building_tools
+    - seissol-utils
     - cuda
   specs:
   - matrix:
@@ -71,8 +72,6 @@ update-alternatives --install /usr/bin/python python /usr/bin/python3 20 \
 && ranlib /opt/view/lib/gcc/*/*/libgcc.a \
 && pip3 install scons numpy \
 && mkdir workspace
-
-
 
 
 
